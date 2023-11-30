@@ -1,12 +1,13 @@
 {
   "name": "instructor_411_wk5_day1_mapstatetoprops",
   "version": "0.1.0",
+  "homepage": "https://StewartWingfield.github.io/411reduxthunk",
   "private": true,
   "dependencies": {
-    "@mui/material": "^5.8.2",
-    "@mui/icons-material": "^5.8.2",
-    "@emotion/styled": "^11.8.1",
     "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.8.2",
+    "@mui/material": "^5.8.2",
     "i": "^0.3.7",
     "npm": "^8.10.0",
     "react": "^18.1.0",
@@ -20,6 +21,8 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -39,5 +42,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.0"
   }
 }
